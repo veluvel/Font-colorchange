@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Color Change</title>
+</head>
+<body>
+
+    <input type="text" id="text">
+    <button id="btn">Click Magic</button>
+    <h1 id="output">Its a Rainbow color</h1>
+    
+    <script>
+        let button = document.getElementById("btn");
+        button.addEventListener("click",changeColor);
+        function changeColor(){
+            var name = document.getElementById("output");
+            var text = document.getElementById("text");
+            name.style.color = text.value;
+            text.value=""
+        }
+    </script>
+</body>
+</html>
